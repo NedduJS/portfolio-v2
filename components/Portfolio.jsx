@@ -1,4 +1,6 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore from 'swiper';
 
 import PorfolioItem from './PorfolioItem';
 
@@ -100,9 +102,19 @@ const Portfolio = () => {
     <section className='portfolio' id='portfolio'>
       <h2 className='section__title'>Portfolio</h2>
       <div className='portfolio__container container'>
-        {portfolioList.map((item, index) => {
-          return <PorfolioItem key={index} {...item} />;
-        })}
+        <Swiper
+          spaceBetween={50}
+          slidesPerView={1}
+          onSlideChange={() => console.log('slide change')}
+          onSwiper={(swiper) => console.log(swiper)}>
+          {portfolioList.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <PorfolioItem  {...item} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
     </section>
   );
