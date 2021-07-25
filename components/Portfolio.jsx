@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore from 'swiper';
+import SwiperCore, { Navigation, Pagination } from 'swiper';
 
 import PorfolioItem from './PorfolioItem';
 
@@ -75,7 +75,7 @@ const portfolioList = [
     description:
       'Badge management system where you can add new badges, built with Express in the backend using MongoDB as database and Redux thunk to get and post API data ',
     website: 'https://badgesplatform.netlify.app/',
-    code: 'https://github.com/NedduJS/badgesFrotend',
+    code: 'https://github.com/nestoredduardo/badgesFrotend',
   },
   {
     title: 'PlatziVideo',
@@ -84,7 +84,7 @@ const portfolioList = [
     description:
       'Video player application with dynamic favorites section and movie finder developed with React and Redux',
     website: 'https://platzivideo-react.netlify.app/',
-    code: 'https://github.com/NedduJS/platziVideoReact',
+    code: 'https://github.com/nestoredduardo/platziVideoReact',
   },
   {
     title: 'Netzi Video Player',
@@ -92,10 +92,12 @@ const portfolioList = [
     websiteImage: videoPlayerImg,
     description:
       'Video player built using the Youtube API with time bar, play/pause buttons and volume control implemented with JavaScript',
-    website: 'https://neddujs.github.io/videoPlayer/',
-    code: 'https://github.com/NedduJS/videoPlayer',
+    website: 'https://nestoredduardo.github.io/videoPlayer/',
+    code: 'https://github.com/nestoredduardo/videoPlayer',
   },
 ];
+
+SwiperCore.use([Navigation, Pagination]);
 
 const Portfolio = () => {
   return (
@@ -106,11 +108,13 @@ const Portfolio = () => {
           spaceBetween={50}
           slidesPerView={1}
           onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}>
+          onSwiper={(swiper) => console.log(swiper)}
+          navigation
+          pagination>
           {portfolioList.map((item, index) => {
             return (
               <SwiperSlide key={index}>
-                <PorfolioItem  {...item} />
+                <PorfolioItem {...item} />
               </SwiperSlide>
             );
           })}
