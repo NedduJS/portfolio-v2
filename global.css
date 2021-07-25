@@ -325,3 +325,22 @@ img {
 .home__social-icon {
   color: var(--brand);
 }
+
+.about__img {
+  width: 200px;
+  border-radius: 0.5rem;
+  justify-self: center;
+  align-self: center;
+}
+
+.about__subtitle {
+  margin-bottom: 0;
+}
+
+.about__description {
+  margin-bottom: 1rem;
+}
+
+.about__subdescription {
+  margin-bottom: 0.5rem;
+}
