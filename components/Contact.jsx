@@ -76,24 +76,17 @@ export default () => {
           <div className='contact__information'>
             <a
               target='_blank'
-              href='https://www.linkedin.com/in/nestoredduardo/'
-              className='home'>
+              href='https://www.linkedin.com/in/nestoredduardo/'>
               <UilLinkedin className='contact__icon' width='40' height='40' />
             </a>
           </div>
           <div className='contact__information'>
-            <a
-              target='_blank'
-              href='https://twitter.com/nestoredduardo'
-              className='home'>
+            <a target='_blank' href='https://twitter.com/nestoredduardo'>
               <UilTwitter className='contact__icon' width='40' height='40' />
             </a>
           </div>
           <div className='contact__information'>
-            <a
-              target='_blank'
-              href='https://www.instagram.com/nestoredduardo/'
-              className='home'>
+            <a target='_blank' href='https://www.instagram.com/nestoredduardo/'>
               <UilInstagram className='contact__icon' width='40' height='40' />
             </a>
           </div>
