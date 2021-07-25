@@ -2,7 +2,11 @@ import React from 'react';
 
 import Home from './Home';
 import About from './About';
-import Portfolio from './Main';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+import Footer from './Footer';
+import ScrollTop from './ScrollTop';
+
 
 const Main = () => {
   return (
@@ -10,6 +14,9 @@ const Main = () => {
       <Home />
       <About />
       <Portfolio />
+      <Contact />
+      <Footer />
+      <ScrollTop />
     </div>
   );
 };

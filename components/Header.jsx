@@ -11,6 +11,15 @@ import {
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState('');
+  const [scroll, setScroll] = useState('');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY >= 200) {
+      setScroll('scroll-header');
+    } else {
+      setScroll('');
+    }
+  });
 
   const handleToggleClick = () => {
     setShowMenu('show-menu');
@@ -21,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <header className='header' id='header'>
+    <header className={`header ${scroll}`} id='header'>
       <nav className='nav container'>
         <a href='#' className='nav__logo'>
           Nestor
