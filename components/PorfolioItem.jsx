@@ -18,7 +18,7 @@ const PorfolioItem = ({
         alt={title}
         className='portfolio__img'
         width='265'
-        height='187'
+        height='170'
       />
       <div className='portfolio__data'>
         <h3 className='portfolio__title'>{title}</h3>
