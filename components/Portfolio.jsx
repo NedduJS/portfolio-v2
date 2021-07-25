@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 
@@ -99,11 +100,15 @@ const portfolioList = [
 
 SwiperCore.use([Navigation, Pagination]);
 
+
+
+
 const Portfolio = () => {
   return (
     <section className='portfolio' id='portfolio'>
       <h2 className='section__title'>Portfolio</h2>
       <div className='portfolio__container container'>
+
         <Swiper
           spaceBetween={50}
           slidesPerView={1}

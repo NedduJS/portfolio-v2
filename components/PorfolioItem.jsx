@@ -3,6 +3,7 @@ import Image from 'next/image';
 
 import { UilArrowRight, UilArrow } from '@iconscout/react-unicons';
 
+
 const PorfolioItem = ({
   title,
   techArray,

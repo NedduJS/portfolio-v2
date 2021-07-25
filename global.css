@@ -111,7 +111,6 @@ img {
 .section__subtitle {
   display: block;
   font-size: var(--small-font-size);
-  margin-bottom: var(--mb-3);
 }
 
 .section__title,
@@ -307,7 +306,7 @@ img {
   color: #fff;
   padding: 1rem;
   border-radius: 0.5rem;
-  font-weight: var(--font-medium);
+  font-weight: bold;
 }
 
 .button:hover {
