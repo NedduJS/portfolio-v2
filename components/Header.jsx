@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import {
   UilHome,
@@ -7,19 +7,22 @@ import {
   UilMessage,
   UilTimes,
   UilApps,
+  UilMoon,
 } from '@iconscout/react-unicons';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState('');
   const [scroll, setScroll] = useState('');
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY >= 200) {
-      setScroll('scroll-header');
-    } else {
-      setScroll('');
-    }
-  });
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 200) {
+        setScroll('scroll-header');
+      } else {
+        setScroll('');
+      }
+    });
+  }, []);
 
   const handleToggleClick = () => {
     setShowMenu('show-menu');
@@ -71,6 +74,7 @@ const Header = () => {
           />
         </div>
         <div className='nav__btns'>
+          <UilMoon className='change-theme' id='theme-button' />
           <div
             className='nav__toggle'
             id='nav-toggle'
