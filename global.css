@@ -17,7 +17,7 @@ html {
 
   --header-height: 3rem;
 
-  --hue-color: 254;
+  --hue-color: 230;
 
   --first-color: var(--brand);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
