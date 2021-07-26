@@ -10,14 +10,14 @@ html {
 
 :root {
   --brand: #3551d5;
-  --darkBrand: #1a1525;
+  --darkBrand: #0a0f26;
   --white: #fcfbff;
   --gray: #757476;
   --black: #131313;
 
   --header-height: 3rem;
 
-  --hue-color: 250;
+  --hue-color: 254;
 
   --first-color: var(--brand);
   --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -29,6 +29,8 @@ html {
   --input-color: hsl(var(--hue-color), 70%, 96%);
   --body-color: hsl(var(--hue-color), 60%, 99%);
   --container-color: #fcfbff;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
   --body-font: sans-serif;
 
@@ -135,7 +137,7 @@ img {
   bottom: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: var(--white);
+  background-color: var(--body-color);
 }
 
 .nav {
@@ -171,7 +173,7 @@ img {
     bottom: -100%;
     left: 0;
     width: 100%;
-    background-color: var(--white);
+    background-color: var(--body-color);
     padding: 2rem 1.5rem 4rem;
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
     border-radius: 1.5rem 1.5rem 0 0;
@@ -444,6 +446,10 @@ img {
   padding: 0.25rem 0.5rem 0.5rem 0;
 }
 
+.contact__inputs {
+  gap: 0.5rem !important;
+}
+
 @media (max-width: 330px) {
   .grid {
     display: grid;
@@ -558,6 +564,19 @@ body.dark-theme {
   --title-color: hsl(var(--hue-color), 8%, 95%);
   --text-color: hsl(var(--hue-color), 8%, 75%);
   --input-color: hsl(var(--hue-color), 29%, 16%);
-  --body-color: hsl(var(--hue-color), 28%, 12%);
-  --container-color: #1a1525;
+  --body-color: #0a0f26;
+  --container-color: #0a0f26;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+  border-radius: 0.5rem;
 }

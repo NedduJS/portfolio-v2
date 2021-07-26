@@ -8,11 +8,13 @@ import {
   UilTimes,
   UilApps,
   UilMoon,
+  UilSun,
 } from '@iconscout/react-unicons';
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState('');
   const [scroll, setScroll] = useState('');
+  const [theme, setTheme] = useState('light');
 
   useEffect(() => {
     window.addEventListener('scroll', () => {
@@ -30,6 +32,16 @@ const Header = () => {
 
   const handleCloseClick = () => {
     setShowMenu('');
+  };
+
+  const handleThemeClick = () => {
+    if (theme === 'light') {
+      window.document.body.classList.add('dark-theme');
+      setTheme('dark');
+    } else {
+      window.document.body.classList.remove('dark-theme');
+      setTheme('light');
+    }
   };
 
   return (
@@ -74,7 +86,20 @@ const Header = () => {
           />
         </div>
         <div className='nav__btns'>
-          <UilMoon className='change-theme' id='theme-button' />
+          {theme === 'light' ? (
+            <UilMoon
+              className='change-theme'
+              id='theme-button'
+              onClick={handleThemeClick}
+            />
+          ) : (
+            <UilSun
+              className='change-theme'
+              id='theme-button'
+              onClick={handleThemeClick}
+            />
+          )}
+
           <div
             className='nav__toggle'
             id='nav-toggle'
