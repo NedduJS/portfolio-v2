@@ -32,7 +32,7 @@ const About = () => {
             </p>
             <p className='about__subdescription'>
               To figure out the website design and functionalities I use the
-              design process from user requirements, user histories, mockups,
+              design process from user research, user histories,
               low and high fidelity design in Figma.
             </p>
           </p>
