@@ -7,7 +7,7 @@ import {
 } from '@iconscout/react-unicons';
 import axios from 'axios';
 
-export default () => {
+const Contact = () => {
   const [status, setStatus] = useState({
     submitted: false,
     submitting: false,
@@ -156,3 +156,5 @@ export default () => {
     </section>
   );
 };
+
+export default Contact;

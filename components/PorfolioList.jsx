@@ -57,13 +57,31 @@ const PorfolioList = () => {
   ];
   const portfolioList = [
     {
+      title: 'Avo Market',
+      techArray: [TechStack[1], TechStack[2], TechStack[3]],
+      websiteImage: avo,
+      description:
+        'Badge management system where you can add new badges, built with Express in the backend using MongoDB as database and Redux thunk to get and post API data ',
+      website: 'https://avomarket.vercel.app/',
+      code: 'https://github.com/nestoredduardo/curso-nextjs',
+    },
+    {
+      title: 'Task Manager',
+      techArray: [TechStack[1], TechStack[2], TechStack[3]],
+      websiteImage: task,
+      description:
+        'Badge management system where you can add new badges, built with Express in the backend using MongoDB as database and Redux thunk to get and post API data ',
+      website: 'https://njstask.netlify.app/',
+      code: 'https://github.com/nestoredduardo/task-manager-frontend',
+    },
+    {
       title: 'Badge Management',
       techArray: [TechStack[1], TechStack[2], TechStack[3]],
       websiteImage: badges,
       description:
         'Badge management system where you can add new badges, built with Express in the backend using MongoDB as database and Redux thunk to get and post API data ',
       website: 'https://badgesplatform.netlify.app/',
-      code: 'https://github.com/NedduJS/badgesFrotend',
+      code: 'https://github.com/nestoredduardo/badgesFrotend',
     },
     {
       title: 'PlatziVideo',
@@ -72,7 +90,7 @@ const PorfolioList = () => {
       description:
         'Video player application with dynamic favorites section and movie finder developed with React and Redux',
       website: 'https://platzivideo-react.netlify.app/',
-      code: 'https://github.com/NedduJS/platziVideoReact',
+      code: 'https://github.com/nestoredduardo/platziVideoReact',
     },
     {
       title: 'Netzi Video Player',
@@ -80,8 +98,8 @@ const PorfolioList = () => {
       websiteImage: videoPlayerImg,
       description:
         'Video player built using the Youtube API with time bar, play/pause buttons and volume control implemented with JavaScript',
-      website: 'https://neddujs.github.io/videoPlayer/',
-      code: 'https://github.com/NedduJS/videoPlayer',
+      website: 'https://nestoredduardo.github.io/videoPlayer/',
+      code: 'https://github.com/nestoredduardo/videoPlayer',
     },
   ];
 

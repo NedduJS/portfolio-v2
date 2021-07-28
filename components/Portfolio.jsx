@@ -20,6 +20,8 @@ import responsiveImage from '../public/icon_responsive.svg';
 import platziVideoImg from '../public/platziVideo.png';
 import badgesImg from '../public/badges.png';
 import videoPlayerImg from '../public/videoPlayer.png';
+import avoImg from '../public/avo.png';
+import taskImg from '../public/task.png';
 
 const TechStack = [
   {
@@ -70,6 +72,24 @@ const TechStack = [
 
 const portfolioList = [
   {
+    title: 'Avo Market',
+    techArray: [TechStack[1], TechStack[2], TechStack[3]],
+    websiteImage: avoImg,
+    description:
+      'My first project using Next and Typescript, it is an Avocado Market with interactive cart. The actions and states were done using redux',
+    website: 'https://avomarket.vercel.app/',
+    code: 'https://github.com/nestoredduardo/curso-nextjs',
+  },
+  {
+    title: 'Task Manager',
+    techArray: [TechStack[1], TechStack[2], TechStack[3]],
+    websiteImage: taskImg,
+    description:
+      'Web to manage tasks, with styles acording to the state. Some components were imported from Material UI. The backend is deployed in heroku and I used Django rest framework to make the CRUD',
+    website: 'https://njstask.netlify.app/',
+    code: 'https://github.com/nestoredduardo/task-manager-frontend',
+  },
+  {
     title: 'Badge Management',
     techArray: [TechStack[1], TechStack[2], TechStack[3]],
     websiteImage: badgesImg,
@@ -100,15 +120,11 @@ const portfolioList = [
 
 SwiperCore.use([Navigation, Pagination]);
 
-
-
-
 const Portfolio = () => {
   return (
     <section className='portfolio' id='portfolio'>
       <h2 className='section__title'>Portfolio</h2>
       <div className='portfolio__container container'>
-
         <Swiper
           spaceBetween={50}
           slidesPerView={1}
