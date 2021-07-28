@@ -38,7 +38,7 @@ const About = () => {
           </p>
           <div className='about__buttons'>
             <a
-              href='https://drive.google.com/file/d/1OlbSsKrRgMW4BkfD7DilRCUxUBBjvWXy/view?usp=sharing'
+              href='https://drive.google.com/file/d/1JTiwHRAxbri_fQeEY6rp4M7fX7tIjaP7/view?usp=sharing'
               target='_blank'
               className='button button--flex'>
               Watch CV
