@@ -651,6 +651,8 @@ body.dark-theme {
     row-gap: 5rem;
   }
   .home__content {
+    display: flex;
+    align-items: center;
     padding-top: 5.5rem;
     column-gap: 2rem;
   }
@@ -699,15 +701,19 @@ body.dark-theme {
   }
 }
 
+.home__container {
+  height: 90vh;
+}
+
+.home__social {
+  height: 100px;
+}
+
 @media screen and (min-width: 1024px) {
   .header,
   .main,
   .footer__container {
     padding: 0;
-  }
-
-  .home__container {
-    height: 90vh;
   }
 
   .home__title {
