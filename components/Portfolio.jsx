@@ -16,6 +16,9 @@ import nodeImage from '../public/icon_nodejs.svg';
 import expressImage from '../public/icon_express.svg';
 import youtubeImage from '../public/icon_youtube.svg';
 import responsiveImage from '../public/icon_responsive.svg';
+import nextImage from '../public/icon_next.svg';
+import tsImage from '../public/icon_typescript.svg';
+import djangoImage from '../public/icon_django.svg';
 
 import platziVideoImg from '../public/platziVideo.png';
 import badgesImg from '../public/badges.png';
@@ -62,19 +65,31 @@ const TechStack = [
     techImage: expressImage,
   },
   {
-    techName: 'Youtube API',
+    techName: 'YT API',
     techImage: youtubeImage,
   },
   {
-    techName: 'Responsive Design',
+    techName: 'Responsive',
     techImage: responsiveImage,
+  },
+  {
+    techName: 'Next.JS',
+    techImage: nextImage,
+  },
+  {
+    techName: 'Typescript',
+    techImage: tsImage,
+  },
+  {
+    techName: 'Django',
+    techImage: djangoImage,
   },
 ];
 
 const portfolioList = [
   {
     title: 'Avo Market',
-    techArray: [TechStack[1], TechStack[2], TechStack[3]],
+    techArray: [TechStack[11], TechStack[12], TechStack[4]],
     websiteImage: avoImg,
     description:
       'My first project using Next and Typescript, it is an Avocado Market with interactive cart. The actions and states were done using redux',
@@ -83,7 +98,7 @@ const portfolioList = [
   },
   {
     title: 'Task Manager',
-    techArray: [TechStack[1], TechStack[2], TechStack[3]],
+    techArray: [TechStack[13], TechStack[3], TechStack[4]],
     websiteImage: taskImg,
     description:
       'Web to manage tasks, with styles acording to the state. Some components were imported from Material UI. The backend is deployed in heroku and I used Django rest framework to make the CRUD',
@@ -92,7 +107,7 @@ const portfolioList = [
   },
   {
     title: 'Badge Management',
-    techArray: [TechStack[1], TechStack[2], TechStack[3]],
+    techArray: [TechStack[3], TechStack[7], TechStack[8]],
     websiteImage: badgesImg,
     description:
       'Badge management system where you can add new badges, built with Express in the backend using MongoDB as database and Redux thunk to get and post API data ',
@@ -101,7 +116,7 @@ const portfolioList = [
   },
   {
     title: 'PlatziVideo',
-    techArray: [TechStack[1], TechStack[2], TechStack[3]],
+    techArray: [TechStack[3], TechStack[4], TechStack[5]],
     websiteImage: platziVideoImg,
     description:
       'Video player application with dynamic favorites section and movie finder developed with React and Redux',
@@ -110,7 +125,7 @@ const portfolioList = [
   },
   {
     title: 'Netzi Video Player',
-    techArray: [TechStack[1], TechStack[2], TechStack[3]],
+    techArray: [TechStack[2], TechStack[9], TechStack[10]],
     websiteImage: videoPlayerImg,
     description:
       'Video player built using the Youtube API with time bar, play/pause buttons and volume control implemented with JavaScript',

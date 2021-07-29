@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
+import Tech from './Tech';
 import { UilArrowRight, UilArrow } from '@iconscout/react-unicons';
 
 const PorfolioItem = ({
@@ -14,13 +15,24 @@ const PorfolioItem = ({
 }) => {
   return (
     <div className='portfolio__content grid'>
-      <Image
-        src={websiteImage}
-        alt={title}
-        className='portfolio__img'
-        width='265'
-        height='170'
-      />
+      <div className='portfolio__media'>
+        <Image
+          src={websiteImage}
+          alt={title}
+          className='portfolio__img'
+          width='265'
+          height='170'
+        />
+        {design ? (
+          <></>
+        ) : (
+          <div className='proyectItem__tech'>
+            {techArray.map((item, index) => {
+              return <Tech {...item} key={index} />;
+            })}
+          </div>
+        )}
+      </div>
       <div className='portfolio__data'>
         <h3 className='portfolio__title'>{title}</h3>
         <p className='portfolio__description'>{description}</p>
