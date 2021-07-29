@@ -3,7 +3,6 @@ import Image from 'next/image';
 
 import { UilArrowRight, UilArrow } from '@iconscout/react-unicons';
 
-
 const PorfolioItem = ({
   title,
   techArray,
@@ -11,6 +10,7 @@ const PorfolioItem = ({
   description,
   website,
   code,
+  design,
 }) => {
   return (
     <div className='portfolio__content grid'>
@@ -32,13 +32,17 @@ const PorfolioItem = ({
             Website
             <UilArrowRight className='button__icon' />
           </a>
-          <a
-            href={code}
-            target='_blank'
-            className='button button--flex button--small portfolio__button'>
-            Code
-            <UilArrow className='button__icon' />
-          </a>
+          {design ? (
+            <></>
+          ) : (
+            <a
+              href={code}
+              target='_blank'
+              className='button button--flex button--small portfolio__button'>
+              Code
+              <UilArrow className='button__icon' />
+            </a>
+          )}
         </div>
       </div>
     </div>

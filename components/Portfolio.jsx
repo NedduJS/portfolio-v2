@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
@@ -22,6 +22,7 @@ import badgesImg from '../public/badges.png';
 import videoPlayerImg from '../public/videoPlayer.png';
 import avoImg from '../public/avo.png';
 import taskImg from '../public/task.png';
+import pointsImg from '../public/points.png';
 
 const TechStack = [
   {
@@ -118,12 +119,38 @@ const portfolioList = [
   },
 ];
 
+const designList = [
+  {
+    title: 'Extracurricular points - Design Process',
+    techArray: [TechStack[1], TechStack[2], TechStack[3]],
+    websiteImage: pointsImg,
+    description:
+      'This is my first project about product design, which brought me a lot of learning and practical experience. One of the main learnings is the importance of design to figure out what the user really needs. ',
+    website: 'https://uxfol.io/project/032e62b3/',
+    code: '',
+  },
+];
+
 SwiperCore.use([Navigation, Pagination]);
 
 const Portfolio = () => {
+  const [field, setField] = useState('web');
+
+  const handleField = (e) => {
+    setField(e.target.attributes.name.value);
+  };
+
   return (
     <section className='portfolio' id='portfolio'>
       <h2 className='section__title'>Portfolio</h2>
+      <div className='portfolio__fields'>
+        <span onClick={handleField} name='web'>
+          Web development
+        </span>
+        <span onClick={handleField} name='design'>
+          Product Design
+        </span>
+      </div>
       <div className='portfolio__container container'>
         <Swiper
           spaceBetween={50}
@@ -132,13 +159,22 @@ const Portfolio = () => {
           onSwiper={(swiper) => console.log(swiper)}
           navigation
           pagination>
-          {portfolioList.map((item, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <PorfolioItem {...item} />
-              </SwiperSlide>
-            );
-          })}
+          {field === 'web' &&
+            portfolioList.map((item, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <PorfolioItem {...item} />
+                </SwiperSlide>
+              );
+            })}
+          {field === 'design' &&
+            designList.map((item, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <PorfolioItem {...item} design={true} />
+                </SwiperSlide>
+              );
+            })}
         </Swiper>
       </div>
     </section>

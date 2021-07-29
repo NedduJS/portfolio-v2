@@ -756,3 +756,22 @@ body.dark-theme {
     width: 460px;
   }
 }
+
+.portfolio__fields {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.portfolio__fields span {
+  background-color: var(--brand);
+  color: var(--white);
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.portfolio__fields span:hover {
+  background-color: #1e243f;
+}
