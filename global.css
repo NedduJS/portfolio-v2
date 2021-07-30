@@ -363,7 +363,7 @@ img {
 
 .portfolio {
   height: 90vh;
-  padding-top: 5rem;
+  padding-top: 2rem;
 }
 
 .portfolio__content {
@@ -420,6 +420,10 @@ img {
 
 .swiper-container {
   height: 80%;
+}
+
+.contact {
+  padding-top: 3rem;
 }
 
 .contact__social {
@@ -687,6 +691,10 @@ body.dark-theme {
 
   .about__description {
     text-align: initial;
+  }
+
+  .portfolio {
+    padding-top: 5rem;
   }
 
   .portfolio__img {
