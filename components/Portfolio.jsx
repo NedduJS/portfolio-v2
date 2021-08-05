@@ -19,6 +19,11 @@ import responsiveImage from '../public/icon_responsive.svg';
 import nextImage from '../public/icon_next.svg';
 import tsImage from '../public/icon_typescript.svg';
 import djangoImage from '../public/icon_django.svg';
+import pythonImage from '../public/icon_python.svg';
+import pandasImage from '../public/icon_pandas.svg';
+import figmaImage from '../public/icon_figma.svg';
+import invisionImage from '../public/icon_invision.svg';
+import miroImage from '../public/icon_miro.svg';
 
 import platziVideoImg from '../public/platziVideo.png';
 import badgesImg from '../public/badges.png';
@@ -26,63 +31,84 @@ import videoPlayerImg from '../public/videoPlayer.png';
 import avoImg from '../public/avo.png';
 import taskImg from '../public/task.png';
 import pointsImg from '../public/points.png';
+import productionImage from '../public/productionAnalysis.png';
 
 const TechStack = [
   {
-    techName: 'HTML',
+    techName: 'HTML', //0
     techImage: htmlImage,
   },
   {
-    techName: 'CSS',
+    techName: 'CSS', //1
     techImage: cssImage,
   },
   {
-    techName: 'JS',
+    techName: 'JS', //2
     techImage: jsImage,
   },
   {
-    techName: 'React',
+    techName: 'React', //3
     techImage: reactImage,
   },
   {
-    techName: 'Redux',
+    techName: 'Redux', //4
     techImage: reduxImage,
   },
   {
-    techName: 'Webpack',
+    techName: 'Webpack', //5
     techImage: webpackImage,
   },
   {
-    techName: 'Git',
+    techName: 'Git', //6
     techImage: gitImage,
   },
   {
-    techName: 'NodeJS',
+    techName: 'NodeJS', //7
     techImage: nodeImage,
   },
   {
-    techName: 'Express',
+    techName: 'Express', //8
     techImage: expressImage,
   },
   {
-    techName: 'YT API',
+    techName: 'YT API', //9
     techImage: youtubeImage,
   },
   {
-    techName: 'Responsive',
+    techName: 'Responsive', //10
     techImage: responsiveImage,
   },
   {
-    techName: 'Next.JS',
+    techName: 'Next.JS', //11
     techImage: nextImage,
   },
   {
-    techName: 'Typescript',
+    techName: 'Typescript', //12
     techImage: tsImage,
   },
   {
-    techName: 'Django',
+    techName: 'Django', //13
     techImage: djangoImage,
+  },
+  {
+    techName: 'Python', //14
+    techImage: pythonImage,
+  },
+  {
+    techName: 'Pandas', //15
+    techImage: pandasImage,
+  },
+  {
+    techName: 'Figma', //16
+    techImage: figmaImage,
+  },
+  {
+    techName: 'Invision', //17
+    techImage: invisionImage,
+  },
+  {
+    techName: 'Miro', //18
+    techImage: miroImage,
   },
 ];
 
@@ -137,12 +163,24 @@ const portfolioList = [
 const designList = [
   {
     title: 'Extracurricular points - Design Process',
-    techArray: [TechStack[1], TechStack[2], TechStack[3]],
+    techArray: [TechStack[16], TechStack[17], TechStack[18]],
     websiteImage: pointsImg,
     description:
       'This is my first project about product design, which brought me a lot of learning and practical experience. One of the main learnings is the importance of design to figure out what the user really needs. ',
     website: 'https://uxfol.io/project/032e62b3/',
     code: '',
+  },
+];
+
+const dataScienceList = [
+  {
+    title: 'Analysis of production data',
+    techArray: [TechStack[14], TechStack[15]],
+    websiteImage: productionImage,
+    description:
+      'In this project, I analyzed the data of a production company and did extrapolations about what is going on at the company.',
+    website: '',
+    code: 'https://github.com/nestoredduardo/data-analysis-production/blob/main/An%C3%A1lisisProducci%C3%B3n.ipynb',
   },
 ];
 
@@ -160,7 +198,10 @@ const Portfolio = () => {
       <h2 className='section__title'>Portfolio</h2>
       <div className='portfolio__fields'>
         <span onClick={handleField} name='web'>
-          Web development
+          Web Dev
+        </span>
+        <span onClick={handleField} name='data'>
+          Data Science
         </span>
         <span onClick={handleField} name='design'>
           Product Design
@@ -178,7 +219,7 @@ const Portfolio = () => {
             portfolioList.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <PorfolioItem {...item} />
+                  <PorfolioItem {...item} field='web' />
                 </SwiperSlide>
               );
             })}
@@ -186,7 +227,15 @@ const Portfolio = () => {
             designList.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <PorfolioItem {...item} design={true} />
+                  <PorfolioItem {...item} design={true} field='design' />
+                </SwiperSlide>
+              );
+            })}
+          {field === 'data' &&
+            dataScienceList.map((item, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <PorfolioItem {...item} data={true} field='data' />
                 </SwiperSlide>
               );
             })}

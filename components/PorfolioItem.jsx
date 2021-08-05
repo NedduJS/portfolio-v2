@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import Tech from './Tech';
+import WebTech from './WebTech';
 import { UilArrowRight, UilArrow } from '@iconscout/react-unicons';
 
 const PorfolioItem = ({
@@ -11,7 +12,7 @@ const PorfolioItem = ({
   description,
   website,
   code,
-  design,
+  field,
 }) => {
   return (
     <div className='portfolio__content grid'>
@@ -23,28 +24,33 @@ const PorfolioItem = ({
           width='265'
           height='170'
         />
-        {design ? (
-          <></>
-        ) : (
-          <div className='proyectItem__tech'>
-            {techArray.map((item, index) => {
+        <div className='proyectItem__tech'>
+          {techArray.map((item, index) => {
+            if (field === 'web') {
+              return <WebTech {...item} key={index} />;
+            } else {
               return <Tech {...item} key={index} />;
-            })}
-          </div>
-        )}
+            }
+          })}
+        </div>
       </div>
       <div className='portfolio__data'>
         <h3 className='portfolio__title'>{title}</h3>
         <p className='portfolio__description'>{description}</p>
         <div className='portfolio__buttons'>
-          <a
-            href={website}
-            target='_blank'
-            className='button button--flex button--small portfolio__button'>
-            Website
-            <UilArrowRight className='button__icon' />
-          </a>
-          {design ? (
+          {field === 'data' ? (
+            <></>
+          ) : (
+            <a
+              href={website}
+              target='_blank'
+              className='button button--flex button--small portfolio__button'>
+              Website
+              <UilArrowRight className='button__icon' />
+            </a>
+          )}
+
+          {field === 'design' ? (
             <></>
           ) : (
             <a

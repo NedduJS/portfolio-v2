@@ -2,10 +2,11 @@ import React from 'react';
 
 import Image from 'next/image';
 
-const Tech = ({ techName, techImage }) => {
+const WebTech = ({ techName, techImage }) => {
   return (
     <div className='tech'>
       <Image
+        className='tech__image'
         src={techImage}
         alt='Technology used in the proyect'
         width='20px'
@@ -16,4 +17,4 @@ const Tech = ({ techName, techImage }) => {
   );
 };
 
-export default Tech;
+export default WebTech;
