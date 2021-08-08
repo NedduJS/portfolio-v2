@@ -13,8 +13,8 @@ const About = () => {
         <img src='' alt='' className='about__img' />
         <div className='about__data'>
           <p className='about__description'>
-            Geek of technology. Action bias. I love building solutions with code
-            and working on projects with purpose.
+            Filled by curiosity. Action bias. I aim creating value using
+            technology and working on projects with purpose.
           </p>
           <p className='about__description'>
             <p className='about__subdescription'>
@@ -22,9 +22,8 @@ const About = () => {
               me to make a website.
             </p>
             <p className='about__subdescription'>
-              So I started to study web development at Platzi. Nowadays I have
-              done responsive websites using React functional components and
-              Next.
+              So I started to study Web Development at Platzi. Nowadays I have
+              done responsive websites using React and Next.
             </p>
             <p className='about__subdescription'>
               To make the backend of the websites I have worked with Express and
@@ -32,8 +31,26 @@ const About = () => {
             </p>
             <p className='about__subdescription'>
               To figure out the website design and functionalities I use the
-              design process from user research, user histories,
-              low and high fidelity design in Figma.
+              design process from user research, user histories, low and high
+              fidelity design in Figma.
+            </p>
+            <p className='about__subdescription'>
+              And in order to make more powerful my applications, I am learning
+              Data Science with{' '}
+              <a
+                className='about__description--link'
+                target='_blank'
+                href='https://platzi.com/p/nestoredduardo/'>
+                Platzi
+              </a>{' '}
+              and{' '}
+              <a
+                className='about__description--link'
+                target='_blank'
+                href='https://www.kaggle.com/nestoredduardo'>
+                Kaggle
+              </a>
+              .
             </p>
           </p>
           <div className='about__buttons'>

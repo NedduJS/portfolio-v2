@@ -422,6 +422,20 @@ img {
   height: 80%;
 }
 
+@media (max-height: 660px) {
+  .portfolio {
+    height: fit-content;
+  }
+
+  .swiper-container {
+    height: 480px;
+  }
+
+  .swiper-pagination {
+    bottom: 0.2rem !important;
+  }
+}
+
 .contact {
   padding-top: 3rem;
 }
@@ -792,6 +806,7 @@ body.dark-theme {
   padding: 0.5rem;
   border-radius: 0.25rem;
   cursor: pointer;
+  text-align: center;
 }
 
 .portfolio__media {
@@ -830,4 +845,8 @@ body.dark-theme {
 
 .tech__image {
   filter: var(--filter);
+}
+
+.about__description--link {
+  color: #4183c4;
 }

@@ -62,7 +62,7 @@ const Home = () => {
           <div className='home__data'>
             <h1 className='home__title'>Nestor Mamani</h1>
             <h3 className='home__subtitle'>
-              Software Developer - Industrial Engineer
+              Software Developer - Data Scientist Jr
             </h3>
             <p className='home__description'>Learning, Building and Sharing</p>
             <a href='#contact' className='button button--flex'>
