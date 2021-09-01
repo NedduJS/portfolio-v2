@@ -38,6 +38,7 @@ class MyDocument extends Document {
             property='twitter:image'
             content='https://drive.google.com/thumbnail?id=1LOTJI4k47pcSXTo8Umk63eM_cx_M-xpO'
           />
+          <meta name="google-site-verification" content="r_d0z9UvAooIVRe5ktDakJVqf8CGb9W1rweCN2WQWhM" />
         </Head>
         <body>
           <Main />
