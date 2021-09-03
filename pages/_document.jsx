@@ -21,7 +21,7 @@ class MyDocument extends Document {
           />
           <meta
             property='og:image'
-            content='./MetaImage.jpg'
+            content='https://nestoredduardo.me/MetaImage.jpg'
           />
 
           <meta property='twitter:card' content='summary_large_image' />
@@ -36,7 +36,7 @@ class MyDocument extends Document {
           />
           <meta
             property='twitter:image'
-            content='./MetaImage.jpg'
+            content='https://nestoredduardo.me/MetaImage.jpg'
           />
           <meta name="google-site-verification" content="r_d0z9UvAooIVRe5ktDakJVqf8CGb9W1rweCN2WQWhM" />
         </Head>
