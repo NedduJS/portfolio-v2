@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <h1 className='footer__title'>Nestor</h1>
             <span className='footer__subtitle'>
-              Software Developer - Industrial Engineer
+              Software Developer - Data Scientist Jr
             </span>
           </div>
           <ul className='footer__links'>
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
         <p className='footer__copy'>
-          &#169; nestoredduardo. All right reserved
+          Nestor Eduardo Mamani Pantoja &#169; nestoredduardo. All right reserved
         </p>
       </div>
     </footer>
