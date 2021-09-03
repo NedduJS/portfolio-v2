@@ -21,7 +21,7 @@ class MyDocument extends Document {
           />
           <meta
             property='og:image'
-            content='https://drive.google.com/thumbnail?id=1LOTJI4k47pcSXTo8Umk63eM_cx_M-xpO'
+            content='./MetaImage.jpg'
           />
 
           <meta property='twitter:card' content='summary_large_image' />
@@ -36,7 +36,7 @@ class MyDocument extends Document {
           />
           <meta
             property='twitter:image'
-            content='https://drive.google.com/thumbnail?id=1LOTJI4k47pcSXTo8Umk63eM_cx_M-xpO'
+            content='./MetaImage.jpg'
           />
           <meta name="google-site-verification" content="r_d0z9UvAooIVRe5ktDakJVqf8CGb9W1rweCN2WQWhM" />
         </Head>
