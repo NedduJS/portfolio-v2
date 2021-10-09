@@ -10,21 +10,20 @@ const PorfolioItem = ({
   techArray,
   websiteImage,
   description,
-  website,
-  code,
   field,
+  buttons,
 }) => {
   return (
-    <div className='portfolio__content grid'>
-      <div className='portfolio__media'>
+    <div className="portfolio__content grid">
+      <div className="portfolio__media">
         <Image
           src={websiteImage}
           alt={title}
-          className='portfolio__img'
-          width='265'
-          height='170'
+          className="portfolio__img"
+          width="265"
+          height="170"
         />
-        <div className='proyectItem__tech'>
+        <div className="proyectItem__tech">
           {techArray.map((item, index) => {
             if (field === 'web') {
               return <WebTech {...item} key={index} />;
@@ -34,33 +33,22 @@ const PorfolioItem = ({
           })}
         </div>
       </div>
-      <div className='portfolio__data'>
-        <h3 className='portfolio__title'>{title}</h3>
-        <p className='portfolio__description'>{description}</p>
-        <div className='portfolio__buttons'>
-          {field === 'data' ? (
-            <></>
-          ) : (
-            <a
-              href={website}
-              target='_blank'
-              className='button button--flex button--small portfolio__button'>
-              Website
-              <UilArrowRight className='button__icon' />
-            </a>
-          )}
-
-          {field === 'design' ? (
-            <></>
-          ) : (
-            <a
-              href={code}
-              target='_blank'
-              className='button button--flex button--small portfolio__button'>
-              Code
-              <UilArrow className='button__icon' />
-            </a>
-          )}
+      <div className="portfolio__data">
+        <h3 className="portfolio__title">{title}</h3>
+        <p className="portfolio__description">{description}</p>
+        <div className="portfolio__buttons">
+          {buttons.map((button) => {
+            return (
+              <a
+                href={button.link}
+                target="_blank"
+                className="button button--flex button--small portfolio__button"
+              >
+                {button.title}
+                <UilArrowRight className="button__icon" />
+              </a>
+            );
+          })}
         </div>
       </div>
     </div>
