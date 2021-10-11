@@ -36,6 +36,7 @@ import pointsImg from '../public/points.png';
 import productionImage from '../public/productionAnalysis.png';
 import churnImage from '../public/churnPredictiveModel.png';
 import vizgotImage from '../public/DatavizGOT.png';
+import kontoCase from '../public/KontoCaseStudy.png';
 
 const TechStack = [
   {
@@ -213,6 +214,19 @@ const portfolioList = [
 ];
 
 const designList = [
+  {
+    title: 'Konto UX/UI Case Study',
+    techArray: [TechStack[16], TechStack[17], TechStack[18]],
+    websiteImage: kontoCase,
+    description:
+      'Product design of a web that allows you to save on your subscriptions by sharing the costs with other people.',
+    buttons: [
+      {
+        title: 'Case Study',
+        link: 'https://www.behance.net/gallery/129130243/Konto-UXUI-Case-Study',
+      },
+    ],
+  },
   {
     title: 'Extracurricular points - Design Process',
     techArray: [TechStack[16], TechStack[17], TechStack[18]],
