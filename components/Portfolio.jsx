@@ -7,18 +7,18 @@ import PorfolioItem from './PorfolioItem';
 
 import htmlImage from '../public/icon_html.svg';
 import cssImage from '../public/icon_css.svg';
-import jsImage from '../public/icon_javascript.svg';
-import reactImage from '../public/icon_react.svg';
-import reduxImage from '../public/icon_redux.svg';
-import webpackImage from '../public/icon_webpack.svg';
+import jsImage from '../public/javascript.png';
+import reactImage from '../public/react.svg';
+import reduxImage from '../public/redux.svg';
+import webpackImage from '../public/webpack.svg';
 import gitImage from '../public/icon_git.svg';
-import nodeImage from '../public/icon_nodejs.svg';
-import expressImage from '../public/icon_express.svg';
-import youtubeImage from '../public/icon_youtube.svg';
-import responsiveImage from '../public/icon_responsive.svg';
-import nextImage from '../public/icon_next.svg';
+import nodeImage from '../public/nodejs.svg';
+import expressImage from '../public/express.svg';
+import youtubeImage from '../public/youtube.svg';
+import responsiveImage from '../public/responsive.svg';
+import nextImage from '../public/next-js.svg';
 import tsImage from '../public/icon_typescript.svg';
-import djangoImage from '../public/icon_django.svg';
+import djangoImage from '../public/django.svg';
 import pythonImage from '../public/icon_python.svg';
 import pandasImage from '../public/icon_pandas.svg';
 import figmaImage from '../public/icon_figma.svg';
@@ -26,6 +26,10 @@ import invisionImage from '../public/icon_invision.svg';
 import miroImage from '../public/icon_miro.svg';
 import scikitImage from '../public/icon_scikit_learn.svg';
 import tableauImage from '../public/tableau-software.svg';
+import vueImage from '../public/vue.svg';
+import nuxtImage from '../public/nuxt.svg';
+import tailwindImage from '../public/tailwindcss.svg';
+import solidityImage from '../public/solidity.svg';
 
 import platziVideoImg from '../public/platziVideo.png';
 import badgesImg from '../public/badges.png';
@@ -37,6 +41,8 @@ import productionImage from '../public/productionAnalysis.png';
 import churnImage from '../public/churnPredictiveModel.png';
 import vizgotImage from '../public/DatavizGOT.png';
 import kontoCase from '../public/KontoCaseStudy.png';
+import drawImage from '../public/drawide.jpg';
+import roadImage from '../public/road2trillion.jpg';
 
 const TechStack = [
   {
@@ -123,6 +129,22 @@ const TechStack = [
     techName: 'Tableau', //20
     techImage: tableauImage,
   },
+  {
+    techName: 'Vue', //21
+    techImage: vueImage,
+  },
+  {
+    techName: 'NuxtJS', //22
+    techImage: nuxtImage,
+  },
+  {
+    techName: 'TailwindCSS', //23
+    techImage: tailwindImage,
+  },
+  {
+    techName: 'Solidity', //24
+    techImage: solidityImage,
+  },
 ];
 
 const portfolioList = [
@@ -144,22 +166,40 @@ const portfolioList = [
     ],
   },
   {
-    title: 'Task Manager',
-    techArray: [TechStack[13], TechStack[3], TechStack[4]],
-    websiteImage: taskImg,
+    title: 'Draw-IDE',
+    techArray: [TechStack[21], TechStack[22], TechStack[23]],
+    websiteImage: drawImage,
     description:
-      'Web to manage tasks, with styles acording to the state. Some components were imported from Material UI. The backend is deployed in heroku and I used Django rest framework to make the CRUD',
+      'Desktop web app to make visual diagrams with drag and drop, where you can the map the logic of a program with number types. I used this library: https://github.com/jerosoler/Drawflow',
     buttons: [
       {
         title: 'Web app',
-        link: 'https://njstask.netlify.app/',
+        link: 'https://draw-ide.netlify.app/',
       },
       {
         title: 'Code',
-        link: 'https://github.com/nestoredduardo/task-manager-frontend',
+        link: 'https://github.com/nestoredduardo/draw-ide',
       },
     ],
   },
+  {
+    title: 'Road to Trillion',
+    techArray: [TechStack[3], TechStack[24]],
+    websiteImage: roadImage,
+    description:
+      'Web3.0 turn-based NFT videogame. The game flow is: Connect your Metamask wallet, mint your character (you will need fake Eth in the Rinkeby Test Network) and attack the boss. If you do not understand a shit, don`t worry. Me neither. I will make a tutorial to play the game soon 😉.',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://road-to-trillion.netlify.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/road-to-trillion',
+      },
+    ],
+  },
+
   {
     title: 'Badge Management',
     techArray: [TechStack[3], TechStack[7], TechStack[8]],
@@ -174,6 +214,23 @@ const portfolioList = [
       {
         title: 'Code',
         link: 'https://github.com/nestoredduardo/badgesFrotend',
+      },
+    ],
+  },
+  {
+    title: 'Task Manager',
+    techArray: [TechStack[13], TechStack[3], TechStack[4]],
+    websiteImage: taskImg,
+    description:
+      'Web to manage tasks, with styles acording to the state. Some components were imported from Material UI. The backend is deployed in heroku and I used Django rest framework to make the CRUD',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://njstask.netlify.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/task-manager-frontend',
       },
     ],
   },
