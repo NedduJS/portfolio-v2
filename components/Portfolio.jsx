@@ -30,6 +30,9 @@ import vueImage from '../public/vue.svg';
 import nuxtImage from '../public/nuxt.svg';
 import tailwindImage from '../public/tailwindcss.svg';
 import solidityImage from '../public/solidity.svg';
+import firebaseImage from '../public/firebase.svg';
+import solanaImage from '../public/solana.svg';
+import rustImage from '../public/rust.svg';
 
 import platziVideoImg from '../public/platziVideo.png';
 import badgesImg from '../public/badges.png';
@@ -43,6 +46,8 @@ import vizgotImage from '../public/DatavizGOT.png';
 import kontoCase from '../public/KontoCaseStudy.png';
 import drawImage from '../public/drawide.jpg';
 import roadImage from '../public/road2trillion.jpg';
+import kontoImage from '../public/konto.jpg';
+import marvelImage from '../public/marvelGifPortal.jpg';
 
 const TechStack = [
   {
@@ -145,9 +150,34 @@ const TechStack = [
     techName: 'Solidity', //24
     techImage: solidityImage,
   },
+  {
+    techName: 'Firebase', //25
+    techImage: firebaseImage,
+  },
+  {
+    techName: 'Solana', //26
+    techImage: solanaImage,
+  },
+  {
+    techName: 'Rust', //27
+    techImage: rustImage,
+  },
 ];
 
 const portfolioList = [
+  {
+    title: 'Konto',
+    techArray: [TechStack[3], TechStack[25], TechStack[23]],
+    websiteImage: kontoImage,
+    description:
+      'Full Stack Web App developed with React using functional components and hooks, login with Google account, show pop-ups when an event is triggered. Handling application state with react-context',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://www.kontope.com/',
+      },
+    ],
+  },
   {
     title: 'Avo Market',
     techArray: [TechStack[11], TechStack[12], TechStack[4]],
@@ -183,24 +213,6 @@ const portfolioList = [
     ],
   },
   {
-    title: 'Road to Trillion',
-    techArray: [TechStack[3], TechStack[24]],
-    websiteImage: roadImage,
-    description:
-      'Web3.0 turn-based NFT videogame. The game flow is: Connect your Metamask wallet, mint your character (you will need fake Eth in the Rinkeby Test Network) and attack the boss. If you do not understand a shit, don`t worry. Me neither. I will make a tutorial to play the game soon 😉.',
-    buttons: [
-      {
-        title: 'Web app',
-        link: 'https://road-to-trillion.netlify.app/',
-      },
-      {
-        title: 'Code',
-        link: 'https://github.com/nestoredduardo/road-to-trillion',
-      },
-    ],
-  },
-
-  {
     title: 'Badge Management',
     techArray: [TechStack[3], TechStack[7], TechStack[8]],
     websiteImage: badgesImg,
@@ -218,6 +230,40 @@ const portfolioList = [
     ],
   },
   {
+    title: 'Road to Trillion',
+    techArray: [TechStack[3], TechStack[24]],
+    websiteImage: roadImage,
+    description:
+      'Web 3.0 turn-based NFT videogame. The game flow is: Connect your Metamask wallet, mint your character (you will need fake Eth in the Rinkeby Test Network) and attack the boss. If you do not understand a shit, don`t worry. Me neither. I will make a tutorial to play the game soon 😉.',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://road-to-trillion.netlify.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/road-to-trillion',
+      },
+    ],
+  },
+  {
+    title: 'Marvel Gif Portal',
+    techArray: [TechStack[3], TechStack[26], TechStack[27]],
+    websiteImage: marvelImage,
+    description:
+      'Web 3.0 application where you can share your favorites Marvel Gifs connecting your Solana Wallet.',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://marvel-gif-portal.netlify.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/gif-portal-starter',
+      },
+    ],
+  },
+  /* {
     title: 'Task Manager',
     techArray: [TechStack[13], TechStack[3], TechStack[4]],
     websiteImage: taskImg,
@@ -233,7 +279,7 @@ const portfolioList = [
         link: 'https://github.com/nestoredduardo/task-manager-frontend',
       },
     ],
-  },
+  }, */
   {
     title: 'PlatziVideo',
     techArray: [TechStack[3], TechStack[4], TechStack[5]],
