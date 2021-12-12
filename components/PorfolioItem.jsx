@@ -16,13 +16,14 @@ const PorfolioItem = ({
   return (
     <div className="portfolio__content grid">
       <div className="portfolio__media">
-        <Image
-          src={websiteImage}
-          alt={title}
-          className="portfolio__img"
-          width="265"
-          height="170"
-        />
+        <div className="w-80 md:w-96">
+          <Image
+            src={websiteImage}
+            alt={title}
+            className="portfolio__img"
+            layout="responsive"
+          />
+        </div>
         <div className="proyectItem__tech">
           {techArray.map((item, index) => {
             if (field === 'web') {

@@ -33,21 +33,26 @@ import solidityImage from '../public/solidity.svg';
 import firebaseImage from '../public/firebase.svg';
 import solanaImage from '../public/solana.svg';
 import rustImage from '../public/rust.svg';
+import chakraImage from '../public/icons/chakra.png';
 
-import platziVideoImg from '../public/platziVideo.png';
+//web2
 import badgesImg from '../public/badges.png';
-import videoPlayerImg from '../public/videoPlayer.png';
-import avoImg from '../public/avo.png';
-import taskImg from '../public/task.png';
-import pointsImg from '../public/points.png';
+import avoImg from '../public/portfolio/web2/platziAvo.png';
+import kontoImage from '../public/portfolio/web2/konto.png';
+
+//web3
+import roadImage from '../public/portfolio/web3/road2trillion.png';
+import marvelImage from '../public/portfolio/web3/marvelGifPortal.png';
+import candyImage from '../public/portfolio/web3/candyPunks.png';
+
+//data
 import productionImage from '../public/productionAnalysis.png';
 import churnImage from '../public/churnPredictiveModel.png';
 import vizgotImage from '../public/DatavizGOT.png';
+
+//design
+import pointsImg from '../public/points.png';
 import kontoCase from '../public/KontoCaseStudy.png';
-import drawImage from '../public/drawide.jpg';
-import roadImage from '../public/road2trillion.jpg';
-import kontoImage from '../public/konto.jpg';
-import marvelImage from '../public/marvelGifPortal.jpg';
 
 const TechStack = [
   {
@@ -162,6 +167,10 @@ const TechStack = [
     techName: 'Rust', //27
     techImage: rustImage,
   },
+  {
+    techName: 'Chakra UI', //28
+    techImage: chakraImage,
+  },
 ];
 
 const portfolioList = [
@@ -196,23 +205,6 @@ const portfolioList = [
     ],
   },
   {
-    title: 'Draw-IDE',
-    techArray: [TechStack[21], TechStack[22], TechStack[23]],
-    websiteImage: drawImage,
-    description:
-      'Desktop web app to make visual diagrams with drag and drop, where you can the map the logic of a program with number types. I used this library: https://github.com/jerosoler/Drawflow',
-    buttons: [
-      {
-        title: 'Web app',
-        link: 'https://draw-ide.netlify.app/',
-      },
-      {
-        title: 'Code',
-        link: 'https://github.com/nestoredduardo/draw-ide',
-      },
-    ],
-  },
-  {
     title: 'Badge Management',
     techArray: [TechStack[3], TechStack[7], TechStack[8]],
     websiteImage: badgesImg,
@@ -226,6 +218,26 @@ const portfolioList = [
       {
         title: 'Code',
         link: 'https://github.com/nestoredduardo/badgesFrotend',
+      },
+    ],
+  },
+];
+
+const web3List = [
+  {
+    title: 'Candy Punks',
+    techArray: [TechStack[3], TechStack[26], TechStack[28]],
+    websiteImage: candyImage,
+    description:
+      "Candy Punks is a collection of randomized Avatars whose metadata is stored on Solana's network. They have unique characteristics and there are only 21 in existence.",
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://nft-solana-collection.vercel.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/nft-solana-collection',
       },
     ],
   },
@@ -260,57 +272,6 @@ const portfolioList = [
       {
         title: 'Code',
         link: 'https://github.com/nestoredduardo/gif-portal-starter',
-      },
-    ],
-  },
-  /* {
-    title: 'Task Manager',
-    techArray: [TechStack[13], TechStack[3], TechStack[4]],
-    websiteImage: taskImg,
-    description:
-      'Web to manage tasks, with styles acording to the state. Some components were imported from Material UI. The backend is deployed in heroku and I used Django rest framework to make the CRUD',
-    buttons: [
-      {
-        title: 'Web app',
-        link: 'https://njstask.netlify.app/',
-      },
-      {
-        title: 'Code',
-        link: 'https://github.com/nestoredduardo/task-manager-frontend',
-      },
-    ],
-  }, */
-  {
-    title: 'PlatziVideo',
-    techArray: [TechStack[3], TechStack[4], TechStack[5]],
-    websiteImage: platziVideoImg,
-    description:
-      'Video player application with dynamic favorites section and movie finder developed with React and Redux',
-    buttons: [
-      {
-        title: 'Web app',
-        link: 'https://platzivideo-react.netlify.app/',
-      },
-      {
-        title: 'Code',
-        link: 'https://github.com/nestoredduardo/platziVideoReact',
-      },
-    ],
-  },
-  {
-    title: 'Netzi Video Player',
-    techArray: [TechStack[2], TechStack[9], TechStack[10]],
-    websiteImage: videoPlayerImg,
-    description:
-      'Video player built using the Youtube API with time bar, play/pause buttons and volume control implemented with JavaScript',
-    buttons: [
-      {
-        title: 'Web app',
-        link: 'https://nestoredduardo.github.io/videoPlayer/',
-      },
-      {
-        title: 'Code',
-        link: 'https://github.com/nestoredduardo/videoPlayer',
       },
     ],
   },
@@ -400,7 +361,10 @@ const Portfolio = () => {
       <h2 className="section__title">Portfolio</h2>
       <div className="portfolio__fields">
         <span onClick={handleField} name="web">
-          Web Dev
+          Web 2.0
+        </span>
+        <span onClick={handleField} name="web3">
+          Web 3.0
         </span>
         <span onClick={handleField} name="data">
           Data Science
@@ -442,6 +406,14 @@ const Portfolio = () => {
                 </SwiperSlide>
               );
             })}
+          {field === 'web3' &&
+            web3List.map((item, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <PorfolioItem {...item} data={true} field="web3" />
+                </SwiperSlide>
+              );
+            })}
         </Swiper>
       </div>
     </section>
@@ -449,3 +421,75 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
+//pastProjects
+/* 
+  {
+    title: 'Draw-IDE',
+    techArray: [TechStack[21], TechStack[22], TechStack[23]],
+    websiteImage: drawImage,
+    description:
+      'Desktop web app to make visual diagrams with drag and drop, where you can the map the logic of a program with number types. I used this library: https://github.com/jerosoler/Drawflow',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://draw-ide.netlify.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/draw-ide',
+      },
+    ],
+  }, */
+
+/* {
+    title: 'Task Manager',
+    techArray: [TechStack[13], TechStack[3], TechStack[4]],
+    websiteImage: taskImg,
+    description:
+      'Web to manage tasks, with styles acording to the state. Some components were imported from Material UI. The backend is deployed in heroku and I used Django rest framework to make the CRUD',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://njstask.netlify.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/task-manager-frontend',
+      },
+    ],
+  }, */
+/* {
+    title: 'PlatziVideo',
+    techArray: [TechStack[3], TechStack[4], TechStack[5]],
+    websiteImage: platziVideoImg,
+    description:
+      'Video player application with dynamic favorites section and movie finder developed with React and Redux',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://platzivideo-react.netlify.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/platziVideoReact',
+      },
+    ],
+  }, */
+/* {
+    title: 'Netzi Video Player',
+    techArray: [TechStack[2], TechStack[9], TechStack[10]],
+    websiteImage: videoPlayerImg,
+    description:
+      'Video player built using the Youtube API with time bar, play/pause buttons and volume control implemented with JavaScript',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://nestoredduardo.github.io/videoPlayer/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/videoPlayer',
+      },
+    ],
+  }, */

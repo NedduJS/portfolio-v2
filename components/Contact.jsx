@@ -67,67 +67,68 @@ const Contact = () => {
       });
   };
   return (
-    <section className='contact section' id='contact'>
-      <h2 className='section__title'>Contact me</h2>
-      <span className='section__subtitle'>Get in touch</span>
+    <section className="contact section mt-10" id="contact">
+      <h2 className="section__title">Contact me</h2>
+      <span className="section__subtitle">Get in touch</span>
 
-      <div className='contact__container container grid'>
-        <div className='contact__social'>
-          <div className='contact__information'>
+      <div className="contact__container container grid">
+        <div className="contact__social">
+          <div className="contact__information">
             <a
-              target='_blank'
-              href='https://www.linkedin.com/in/nestoredduardo/'>
-              <UilLinkedin className='contact__icon' width='40' height='40' />
+              target="_blank"
+              href="https://www.linkedin.com/in/nestoredduardo/"
+            >
+              <UilLinkedin className="contact__icon" width="40" height="40" />
             </a>
           </div>
-          <div className='contact__information'>
-            <a target='_blank' href='https://twitter.com/nestoredduardo'>
-              <UilTwitter className='contact__icon' width='40' height='40' />
+          <div className="contact__information">
+            <a target="_blank" href="https://twitter.com/nestoredduardo">
+              <UilTwitter className="contact__icon" width="40" height="40" />
             </a>
           </div>
-          <div className='contact__information'>
-            <a target='_blank' href='https://www.instagram.com/nestoredduardo/'>
-              <UilInstagram className='contact__icon' width='40' height='40' />
+          <div className="contact__information">
+            <a target="_blank" href="https://www.instagram.com/nestoredduardo/">
+              <UilInstagram className="contact__icon" width="40" height="40" />
             </a>
           </div>
         </div>
-        <form onSubmit={handleOnSubmit} className='contact__form grid'>
-          <div className='contact__inputs grid'>
-            <div className='contact__content'>
-              <label htmlFor='name' className='contact__label'>
+        <form onSubmit={handleOnSubmit} className="contact__form grid">
+          <div className="contact__inputs grid">
+            <div className="contact__content">
+              <label htmlFor="name" className="contact__label">
                 Name
               </label>
               <textarea
-                className='contact__input'
-                id='name'
-                name='name'
+                className="contact__input"
+                id="name"
+                name="name"
                 onChange={handleOnChange}
                 required
                 value={inputs.name}
               />
             </div>
-            <div className='contact__content'>
-              <label htmlFor='email' className='contact__label'>
+            <div className="contact__content">
+              <label htmlFor="email" className="contact__label">
                 Email
               </label>
               <input
-                className='contact__input'
-                id='email'
-                type='email'
-                name='_replyto'
+                className="contact__input"
+                id="email"
+                type="email"
+                name="_replyto"
                 onChange={handleOnChange}
                 required
                 value={inputs.email}
               />
             </div>
-            <div className='contact__content'>
-              <label htmlFor='message' className='contact__label'>
+            <div className="contact__content">
+              <label htmlFor="message" className="contact__label">
                 Message
               </label>
               <textarea
-                className='contact__input'
-                id='message'
-                name='message'
+                className="contact__input"
+                id="message"
+                name="message"
                 onChange={handleOnChange}
                 required
                 value={inputs.message}
@@ -135,21 +136,22 @@ const Contact = () => {
             </div>
             <div>
               <button
-                type='submit'
+                type="submit"
                 disabled={status.submitting}
-                className='button button--flex'>
+                className="button button--flex"
+              >
                 {!status.submitting
                   ? !status.submitted
                     ? 'Send message'
                     : 'Subtmited'
                   : 'Sending...'}
-                <UilMessage className='button__icon' />
+                <UilMessage className="button__icon" />
               </button>
             </div>
           </div>
         </form>
         {status.info.error && (
-          <div className='error'>Error: {status.info.msg}</div>
+          <div className="error">Error: {status.info.msg}</div>
         )}
         {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
       </div>
