@@ -39,6 +39,7 @@ import chakraImage from '../public/icons/chakra.png';
 import badgesImg from '../public/badges.png';
 import avoImg from '../public/portfolio/web2/platziAvo.png';
 import kontoImage from '../public/portfolio/web2/konto.png';
+import sundayImage from '../public/portfolio/web2/sunday.png';
 
 //web3
 import roadImage from '../public/portfolio/web3/road2trillion.png';
@@ -184,6 +185,23 @@ const portfolioList = [
       {
         title: 'Web app',
         link: 'https://www.kontope.com/',
+      },
+    ],
+  },
+  {
+    title: 'Sunday',
+    techArray: [TechStack[3], TechStack[4], TechStack[23]],
+    websiteImage: sundayImage,
+    description:
+      'Web app to manage projects using kanban methodology with drag and drop task. Showing modals to create new projects and task. Global state management with redux.',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://sunday-eight.vercel.app/proyectos',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/sunday',
       },
     ],
   },
