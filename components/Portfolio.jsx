@@ -45,6 +45,7 @@ import sundayImage from '../public/portfolio/web2/sunday.png';
 import roadImage from '../public/portfolio/web3/road2trillion.png';
 import marvelImage from '../public/portfolio/web3/marvelGifPortal.png';
 import candyImage from '../public/portfolio/web3/candyPunks.png';
+import ethergramImage from '../public/portfolio/web3/ethergram.png';
 
 //data
 import productionImage from '../public/productionAnalysis.png';
@@ -242,6 +243,23 @@ const portfolioList = [
 ];
 
 const web3List = [
+  {
+    title: 'Ethergram',
+    techArray: [TechStack[3], TechStack[24], TechStack[28]],
+    websiteImage: ethergramImage,
+    description:
+      'Web where people can wave at me and their messages will be stored in the Rinkeby network, an Ethereum testnet. So come and leave your mark.',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://ethergram.vercel.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/cafe-con-ether',
+      },
+    ],
+  },
   {
     title: 'Candy Punks',
     techArray: [TechStack[3], TechStack[26], TechStack[28]],
