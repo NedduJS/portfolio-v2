@@ -13,7 +13,7 @@ const Footer = () => {
           <div>
             <h1 className="footer__title">Nestor Mamani</h1>
             <span className="footer__subtitle">
-              Software Developer - Data Scientist Jr
+              Data Scientist Jr - Web Developer
             </span>
           </div>
           <ul className="footer__links">

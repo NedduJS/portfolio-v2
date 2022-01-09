@@ -386,7 +386,7 @@ const dataScienceList = [
 SwiperCore.use([Navigation, Pagination]);
 
 const Portfolio = () => {
-  const [field, setField] = useState('web');
+  const [field, setField] = useState('data');
 
   const handleField = (e) => {
     setField(e.target.attributes.name.value);
@@ -396,14 +396,14 @@ const Portfolio = () => {
     <section className="portfolio" id="portfolio">
       <h2 className="section__title">Portfolio</h2>
       <div className="portfolio__fields">
+        <span onClick={handleField} name="data">
+          Data Science
+        </span>
         <span onClick={handleField} name="web">
           Web 2.0
         </span>
         <span onClick={handleField} name="web3">
           Web 3.0
-        </span>
-        <span onClick={handleField} name="data">
-          Data Science
         </span>
         <span onClick={handleField} name="design">
           Product Design

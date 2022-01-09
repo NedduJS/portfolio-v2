@@ -6,62 +6,40 @@ const About = () => {
   return (
     <section className="about section" id="about">
       <h2 className="section__title">About me</h2>
-      <span className="section__subtitle about__subtitle">
+      {/* <span className="section__subtitle about__subtitle">
         A little bit of my history
-      </span>
+      </span> */}
       <div className="about__container container grid">
         <img src="" alt="" className="about__img" />
         <div className="about__data">
           <p className="about__description">
-            Filled by curiosity. Action bias. I aim creating value using
-            technology and working on projects with purpose.
+            Hi👋, I am a student of Industrial Engineering passionate about Data
+            Science.
           </p>
           <p className="about__description">
             <p className="about__subdescription">
-              In my journey of learning new things, I had an idea which required
-              me to make a website.
+              The biggest companies in the world know how to create more value
+              for users with data and use it as a competitive advantage.
             </p>
             <p className="about__subdescription">
-              So I started to study Web Development at Platzi. Nowadays I have
-              done responsive websites using React and Next.
+              As Data Scientist, I want to be part of the team that it's working
+              to make that possible. I manipulate, analyze and clean data using
+              Python with libraries as numpy, pandas, matplotlib and build
+              machine learning models with sklearn. To answer business questions
+              I have used Power BI and Tableau.
             </p>
             <p className="about__subdescription">
-              To make the backend of the websites I have worked with Express and
-              Django rest framework.
+              I am always learning new technologies to build things, create
+              value and have fun
             </p>
             <p className="about__subdescription">
-              To figure out the website design and functionalities I use the
-              design process from user research, user histories, low and high
-              fidelity design in Figma.
-            </p>
-            <p className="about__subdescription">
-              And in order to make more powerful my applications, I am learning
-              Data Science with{' '}
-              <a
-                className="about__description--link"
-                target="_blank"
-                href="https://platzi.com/p/nestoredduardo/"
-              >
-                Platzi
-              </a>{' '}
-              and{' '}
-              <a
-                className="about__description--link"
-                target="_blank"
-                href="https://www.kaggle.com/nestoredduardo"
-              >
-                Kaggle
-              </a>
-              .
+              🔥 If you want to see some of my projects (Ex. Data Science,
+              Failed startup, Web3.0 ) Click below 👇
             </p>
           </p>
           <div className="about__buttons">
-            <a
-              href="https://drive.google.com/file/d/1JTiwHRAxbri_fQeEY6rp4M7fX7tIjaP7/view?usp=sharing"
-              target="_blank"
-              className="button button--flex"
-            >
-              Watch CV
+            <a href="#portfolio" className="button button--flex">
+              Watch Projects
               <UilDownloadAlt className="button__icon" />
             </a>
           </div>
