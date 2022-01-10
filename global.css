@@ -186,6 +186,10 @@ img {
     transition: 0.3s;
     z-index: var(--z-modal);
   }
+
+  .proyectItem__tech {
+    margin-bottom: 0 !important;
+  }
 }
 
 .nav__list {
@@ -362,7 +366,7 @@ img {
 }
 
 .portfolio {
-  height: 90vh;
+  min-height: 90vh;
   padding-top: 2rem;
 }
 
@@ -398,6 +402,7 @@ img {
 .portfolio__buttons {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 2rem;
 }
 
 .portfolio__button .button__icon {
@@ -821,6 +826,7 @@ body.dark-theme {
 
 .proyectItem__tech {
   margin-top: 0.5rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: space-around;
 }
