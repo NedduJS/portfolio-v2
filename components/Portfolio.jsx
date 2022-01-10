@@ -51,6 +51,7 @@ import ethergramImage from '../public/portfolio/web3/ethergram.png';
 import productionImage from '../public/productionAnalysis.png';
 import churnImage from '../public/churnPredictiveModel.png';
 import vizgotImage from '../public/DatavizGOT.png';
+import customerImage from '../public/portfolio/data/CustomerSegmentation.png';
 
 //design
 import pointsImg from '../public/points.png';
@@ -134,7 +135,7 @@ const TechStack = [
     techImage: miroImage,
   },
   {
-    techName: 'Sk-learn', //19
+    techName: 'Sklearn', //19
     techImage: scikitImage,
   },
   {
@@ -343,6 +344,19 @@ const designList = [
 ];
 
 const dataScienceList = [
+  {
+    title: 'Customer Segmentation with K-means',
+    techArray: [TechStack[14], TechStack[15], TechStack[19]],
+    websiteImage: customerImage,
+    description:
+      "Nowadays it is important for businesses to know the profiles of their clients. That's where customer segmentation comes into play. In this project, the K-means clustering algorithm will be used to group clients according to their characteristics.",
+    buttons: [
+      {
+        title: 'Case Study and Code',
+        link: 'https://deepnote.com/@nestoredduardo/Customer-Segmentation-JG-iFNc8QsOXgMHz3AdjgQ',
+      },
+    ],
+  },
   {
     title: 'Two years churn predictive model',
     techArray: [TechStack[14], TechStack[15], TechStack[19]],
