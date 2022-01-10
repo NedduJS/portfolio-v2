@@ -402,7 +402,7 @@ img {
 .portfolio__buttons {
   display: flex;
   justify-content: space-around;
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
 }
 
 .portfolio__button .button__icon {
