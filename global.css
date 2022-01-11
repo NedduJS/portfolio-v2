@@ -623,7 +623,8 @@ body.dark-theme {
   }
 
   .portfolio__content {
-    margin-top: 15%;
+    margin-top: 4%;
+    margin-bottom: 4%;
   }
 
   .portfolio__fields {
