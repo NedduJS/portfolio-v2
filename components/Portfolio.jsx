@@ -179,7 +179,7 @@ const TechStack = [
 const portfolioList = [
   {
     title: 'Konto',
-    techArray: [TechStack[3], TechStack[25], TechStack[23]],
+    techArray: [TechStack[11], TechStack[25], TechStack[23]],
     websiteImage: kontoImage,
     description:
       'Full Stack Web App developed with React using functional components and hooks, login with Google account, show pop-ups when an event is triggered. Handling application state with react-context',
@@ -192,7 +192,7 @@ const portfolioList = [
   },
   {
     title: 'Sunday',
-    techArray: [TechStack[3], TechStack[4], TechStack[23]],
+    techArray: [TechStack[11], TechStack[4], TechStack[23]],
     websiteImage: sundayImage,
     description:
       'Web app to manage projects using kanban methodology with drag and drop task. Showing modals to create new projects and task. Global state management with redux.',
