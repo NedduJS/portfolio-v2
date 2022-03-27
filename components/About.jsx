@@ -13,24 +13,27 @@ const About = () => {
         <img src="" alt="" className="about__img" />
         <div className="about__data">
           <p className="about__description">
-            Hi👋, I am a student of Industrial Engineering passionate about Data
-            Science.
+            Hi👋, I am a Full Stack Engineer building great products that people
+            love using.
           </p>
           <p className="about__description">
-            <p className="about__subdescription">
-              The biggest companies in the world know how to create more value
-              for users with data and use it as a competitive advantage.
-            </p>
-            <p className="about__subdescription">
-              As Data Scientist, I want to be part of the team that it's working
-              to make that possible. I manipulate, analyze and clean data using
-              Python with libraries as numpy, pandas, matplotlib and build
-              machine learning models with sklearn. To answer business questions
-              I have used Power BI and Tableau.
-            </p>
+            <ul className="about__subdescription">
+              <li>
+                📌 Proficiency in building products with React.js, Next.js,
+                TailwindCSS
+              </li>
+              <li>
+                📌 Experience doing product development: Starting from the idea,
+                define aims and features, design and build MVP
+              </li>
+              <li>
+                📌 Web3 artisan implementing features like getting NFTs from
+                accounts and working with Solana's smart contracts.
+              </li>
+            </ul>
             <p className="about__subdescription">
               I am always learning new technologies to build things, create
-              value and have fun
+              value and have fun 👇
             </p>
             <p className="about__subdescription">
               🔥 If you want to see some of my projects (Ex. Data Science,
