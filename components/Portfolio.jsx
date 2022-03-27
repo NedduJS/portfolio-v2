@@ -46,6 +46,7 @@ import roadImage from '../public/portfolio/web3/road2trillion.png';
 import marvelImage from '../public/portfolio/web3/marvelGifPortal.png';
 import candyImage from '../public/portfolio/web3/candyPunks.png';
 import ethergramImage from '../public/portfolio/web3/ethergram.png';
+import ethNFTShowcase from '../public/portfolio/web3/ethNFT.png';
 
 //data
 import productionImage from '../public/productionAnalysis.png';
@@ -107,7 +108,7 @@ const TechStack = [
     techImage: nextImage,
   },
   {
-    techName: 'Typescript', //12
+    techName: 'TypeScript', //12
     techImage: tsImage,
   },
   {
@@ -227,6 +228,23 @@ const portfolioList = [
 ];
 
 const web3List = [
+  {
+    title: 'Ethereum NFTs Showcase',
+    techArray: [TechStack[11], TechStack[12], TechStack[23]],
+    websiteImage: ethNFTShowcase,
+    description:
+      'Show your Ethereum and Polygon NFTs on demand with a simple web app. The app use web3.js library to interact with the smart contract and get the NFTs data.',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://misfans-add-nft.vercel.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/misfans-nft-erc721-metadata',
+      },
+    ],
+  },
   {
     title: 'Ethergram',
     techArray: [TechStack[3], TechStack[24], TechStack[28]],
