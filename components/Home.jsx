@@ -65,7 +65,7 @@ const Home = () => {
           <div className="home__data">
             <h1 className="home__title">Nestor Mamani</h1>
             <h3 className="home__subtitle">
-              Data Scientist Jr - Web Developer
+              Full Stack Engineer • Web3 Artisan 🦄
             </h3>
             <p className="home__description">Learning, Building and Sharing</p>
             <a href="#contact" className="button button--flex">
