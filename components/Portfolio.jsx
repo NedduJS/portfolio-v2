@@ -224,23 +224,6 @@ const portfolioList = [
       },
     ],
   },
-  {
-    title: 'Badge Management',
-    techArray: [TechStack[3], TechStack[7], TechStack[8]],
-    websiteImage: badgesImg,
-    description:
-      'Badge management system where you can add new badges, built with Express in the backend using MongoDB as database and Redux thunk to get and post API data ',
-    buttons: [
-      {
-        title: 'Web app',
-        link: 'https://badgesplatform.netlify.app/',
-      },
-      {
-        title: 'Code',
-        link: 'https://github.com/nestoredduardo/badgesFrotend',
-      },
-    ],
-  },
 ];
 
 const web3List = [
@@ -400,7 +383,7 @@ const dataScienceList = [
 SwiperCore.use([Navigation, Pagination]);
 
 const Portfolio = () => {
-  const [field, setField] = useState('data');
+  const [field, setField] = useState('web');
 
   const handleField = (e) => {
     setField(e.target.attributes.name.value);
@@ -410,14 +393,14 @@ const Portfolio = () => {
     <section className="portfolio" id="portfolio">
       <h2 className="section__title">Portfolio</h2>
       <div className="portfolio__fields">
-        <span onClick={handleField} name="data">
-          Data Science
-        </span>
         <span onClick={handleField} name="web">
           Web 2.0
         </span>
         <span onClick={handleField} name="web3">
           Web 3.0
+        </span>
+        <span onClick={handleField} name="data">
+          Data Science
         </span>
         <span onClick={handleField} name="design">
           Product Design
@@ -523,6 +506,23 @@ export default Portfolio;
       {
         title: 'Code',
         link: 'https://github.com/nestoredduardo/platziVideoReact',
+      },
+    ],
+  }, */
+/* {
+    title: 'Badge Management',
+    techArray: [TechStack[3], TechStack[7], TechStack[8]],
+    websiteImage: badgesImg,
+    description:
+      'Badge management system where you can add new badges, built with Express in the backend using MongoDB as database and Redux thunk to get and post API data ',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://badgesplatform.netlify.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/badgesFrotend',
       },
     ],
   }, */
