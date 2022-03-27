@@ -5,23 +5,23 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Nestor Eduardo Mamani Pantoja</title>
+          <title>Nestor Mamani</title>
           <link rel="icon" href="/logo.svg" />
 
-          <meta name="title" content="Nestor Eduardo Mamani Pantoja" />
+          <meta name="title" content="Nestor Mamani" />
           <meta
             name="description"
-            content="Filled by curiosity. Action bias. I aim creating value using technology and working on projects with purpose."
+            content="Full Stack Engineer building great products that people love using."
           />
 
           <link rel="apple-touch-icon" href="/logo.svg" />
 
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://nestoredduardo.me/" />
-          <meta property="og:title" content="Nestor Eduardo Mamani Pantoja" />
+          <meta property="og:title" content="Nestor Mamani" />
           <meta
             property="og:description"
-            content="Filled by curiosity. Action bias. I aim creating value using technology and working on projects with purpose."
+            content="Full Stack Engineer building great products that people love using."
           />
           <meta
             property="og:image"
@@ -30,13 +30,10 @@ class MyDocument extends Document {
 
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://nestoredduardo.me/" />
-          <meta
-            property="twitter:title"
-            content="Nestor Eduardo Mamani Pantoja"
-          />
+          <meta property="twitter:title" content="Nestor Mamani" />
           <meta
             property="twitter:description"
-            content="Filled by curiosity. Action bias. I aim creating value using technology and working on projects with purpose."
+            content="Full Stack Engineer building great products that people love using."
           />
           <meta
             property="twitter:image"
