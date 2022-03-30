@@ -36,10 +36,10 @@ import rustImage from '../public/rust.svg';
 import chakraImage from '../public/icons/chakra.png';
 
 //web2
-import badgesImg from '../public/badges.png';
 import avoImg from '../public/portfolio/web2/platziAvo.png';
 import kontoImage from '../public/portfolio/web2/konto.png';
 import sundayImage from '../public/portfolio/web2/sunday.png';
+import web3BlockImage from '../public/portfolio/web2/web3Blocks.png';
 
 //web3
 import roadImage from '../public/portfolio/web3/road2trillion.png';
@@ -178,6 +178,23 @@ const TechStack = [
 ];
 
 const portfolioList = [
+  {
+    title: 'Web3Blocks',
+    techArray: [TechStack[11], TechStack[12], TechStack[23]],
+    websiteImage: web3BlockImage,
+    description:
+      'Find the best Web3 Writers and Blogs in this beautiful designed website. Some of the features include: Search, Dynamic Pagination with Next.js, handling web state with redux.',
+    buttons: [
+      {
+        title: 'Web app',
+        link: 'https://web3-blocks.vercel.app/',
+      },
+      {
+        title: 'Code',
+        link: 'https://github.com/nestoredduardo/web3-blog',
+      },
+    ],
+  },
   {
     title: 'Konto',
     techArray: [TechStack[11], TechStack[25], TechStack[23]],
@@ -437,7 +454,7 @@ const Portfolio = () => {
             portfolioList.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <PorfolioItem {...item} field="web" />
+                  <PorfolioItem {...item} key={index} field="web" />
                 </SwiperSlide>
               );
             })}
@@ -445,7 +462,12 @@ const Portfolio = () => {
             designList.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <PorfolioItem {...item} design={true} field="design" />
+                  <PorfolioItem
+                    {...item}
+                    key={index}
+                    design={true}
+                    field="design"
+                  />
                 </SwiperSlide>
               );
             })}
@@ -453,7 +475,12 @@ const Portfolio = () => {
             dataScienceList.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <PorfolioItem {...item} data={true} field="data" />
+                  <PorfolioItem
+                    {...item}
+                    key={index}
+                    data={true}
+                    field="data"
+                  />
                 </SwiperSlide>
               );
             })}
@@ -461,7 +488,12 @@ const Portfolio = () => {
             web3List.map((item, index) => {
               return (
                 <SwiperSlide key={index}>
-                  <PorfolioItem {...item} data={true} field="web3" />
+                  <PorfolioItem
+                    {...item}
+                    key={index}
+                    data={true}
+                    field="web3"
+                  />
                 </SwiperSlide>
               );
             })}
